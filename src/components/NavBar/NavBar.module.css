@@ -1,0 +1,92 @@
+.loginbar{
+    background: #d3bbdd;    
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbar {
+    background: white;    
+    margin-top: 50px;    
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.logo{
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    left: 20px;
+    top:20px;
+
+}
+
+.navbar nav ul, .loginbar ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+}
+
+.navbar nav ul li, .loginbar ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar nav li a, .loginbar li a{
+    text-decoration: none;
+    color: rgb(66, 5, 32);
+}
+
+.navbar a:hover{
+    border-top: 3px solid rgb(160, 69, 172);
+}
+
+.loginbar a:hover {
+    color: black;
+    text-decoration: double;
+}
+
+.inputWrapper {
+    
+    position: absolute;   
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    background-color: #d3bbdd;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+.inputWrapper input {
+    display: inline;
+    margin: 0 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #d3bbdd;
+}
+
+.account{
+    background-color: #d3bbdd;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
