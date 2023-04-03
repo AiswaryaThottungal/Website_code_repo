@@ -3,13 +3,14 @@ import classes from './NavBar.module.css';
 import logo from './../../img/logo_final.png'
 import {FaSistrix, FaTimes, FaUserAlt, FaShoppingCart} from "react-icons/fa";
 import { Link, NavLink  } from 'react-router-dom';
-import Modal from './../Modal/Modal';
+import Login from './../Login/Login';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavBar() {
         
      
         const [isOpen, setIsOpen] = useState(false);
+        
         return (
             
             <div>
@@ -22,9 +23,9 @@ function NavBar() {
                         <button id="shopping-cart"  className={classes.account} > <FaShoppingCart/> Cart </button>
                     </li>
                 </ul>
-                <Modal open={isOpen} onClose={()=>setIsOpen(false)}> 
-                    Login Form
-                </Modal>
+                <Login open={isOpen} onClose={()=>setIsOpen(false)}/> 
+                    
+               
 
                 </div>
                 <div className={classes.navbar}>
